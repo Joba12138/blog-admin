@@ -47,7 +47,7 @@
 
 {{-- 分页 --}}
 <div>
-    {{ $customers->withQueryString()->links() }}
+    {{ $customers->links('pagination::bootstrap-4') }}
 </div>
 </body>
 </html>
