@@ -1,5 +1,6 @@
 <?php
 
+use App\Admin\Controllers\Blog\PostController;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
 use Dcat\Admin\Admin;
@@ -13,6 +14,6 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index');
-    $router->resource('blog/posts', 'BlogPostController');
+    $router->resource('blog/posts', PostController::class);
 
 });

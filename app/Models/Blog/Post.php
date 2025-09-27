@@ -3,7 +3,7 @@
 namespace App\Models\Blog;
 
 use App\Models\Attachment;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Dcat\Admin\Traits\HasDateTimeFormatter;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
@@ -47,7 +47,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  */
 class Post extends Model
 {
-    use HasFactory;
+    use HasDateTimeFormatter;
+
+    protected $connection = 'db_blog';
 
     /**
      * @var string[]
@@ -64,11 +66,6 @@ class Post extends Model
         'summary',
         'main_image_id',
     ];
-
-    /**
-     * @var string
-     */
-    protected $table = 'blog_posts';
 
     /**
      * @var array<string, string>

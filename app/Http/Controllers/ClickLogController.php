@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Enums\ClickLogSource;
 use App\Http\Requests\ClickLog\StoreRequest;
 use App\Http\Resources\ClickLogResource;
-use App\Models\ClickLog;
+use App\Models\Blog\ClickLog;
 
 class ClickLogController extends Controller
 {

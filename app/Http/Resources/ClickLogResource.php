@@ -5,7 +5,7 @@ namespace App\Http\Resources;
 use Illuminate\Http\Request;
 
 /**
- * @mixin \App\Models\ClickLog
+ * @mixin \App\Models\Blog\ClickLog
  */
 class ClickLogResource extends JsonResource
 {

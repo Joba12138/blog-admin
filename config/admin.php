@@ -11,7 +11,7 @@ return [
     | login page.
     |
     */
-    'name' => '人人都是产品经理',
+    'name' => '闫振坤',
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
     | `img` tag, eg '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo' => '<img src="/vendor/dcat-admin/images/logo.png" width="35"> &nbsp;人人都是产品经理',
+    'logo' => '<img src="/vendor/dcat-admin/images/logo.png" width="35"> &nbsp;开发之路',
 
     /*
     |--------------------------------------------------------------------------

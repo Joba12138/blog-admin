@@ -7,14 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * 
  *
- * @property int $id
- * @property string $disk
+ * @property int|null $id
+ * @property string|null $disk
  * @property string|null $module
  * @property string|null $bucket_name
- * @property string $path
+ * @property string|null $path
  * @property string|null $url
  * @property string|null $mime_type
- * @property string $type
+ * @property string|null $type
  * @property string|null $original_name
  * @property int|null $size
  * @property int|null $user_id
