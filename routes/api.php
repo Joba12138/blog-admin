@@ -15,6 +15,6 @@ Route::prefix('blogs')->group(function () {
     Route::get('tags', [BlogTagController::class, 'index']);
 });
 
-Route::prefix('renwu')->group(function () {
+Route::prefix('ren-wu')->group(function () {
     Route::post('customers', [CustomerController::class, 'store']);
 });
