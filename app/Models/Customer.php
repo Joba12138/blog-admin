@@ -5,15 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- *
+ * 
  *
  * @property int $id
- * @property string $name 名
+ * @property string|null $name 名
  * @property string $email 邮箱
  * @property string|null $phone 手机号
  * @property string|null $demand 诉求
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string|null $source 客户来源
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Customer newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Customer newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Customer query()
@@ -23,6 +24,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Customer whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Customer whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Customer wherePhone($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Customer whereSource($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Customer whereUpdatedAt($value)
  * @mixin \Eloquent
  */
@@ -35,6 +37,7 @@ class Customer extends Model
         'email',
         'phone',
         'demand',
+        'source',
     ];
 
     protected $casts = [

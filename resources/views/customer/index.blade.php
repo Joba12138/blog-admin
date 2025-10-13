@@ -22,6 +22,7 @@
         <th>邮箱</th>
         <th>手机</th>
         <th>诉求</th>
+        <th>来源</th>
         <th>创建时间</th>
         <th>更新时间</th>
     </tr>
@@ -34,6 +35,7 @@
             <td>{{ $customer->email }}</td>
             <td>{{ $customer->phone }}</td>
             <td>{{ $customer->demand }}</td>
+            <td>{{ $customer->source }}</td>
             <td>{{ $customer->created_at }}</td>
             <td>{{ $customer->updated_at }}</td>
         </tr>
